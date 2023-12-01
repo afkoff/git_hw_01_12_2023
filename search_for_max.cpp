@@ -5,17 +5,17 @@ using namespace std;
 int main()
 {
 	int n;
-	int max = INT_MIN;
+	int min = INT_MAX;
 	cin >> n;
 	int *arr = new int[n];
 	for(int i = 0; i < n; i++)
 	{
 		cin >> arr[i];
-		if(arr[i] > max)
+		if(arr[i] < min)
 		{
-			max = arr[i];
+			min = arr[i];
 		}
 	}
-	cout << "Максимальное значение" << max << endl;
+	cout << "Минимальное значение" << min << endl;
 	return 0;
 }
