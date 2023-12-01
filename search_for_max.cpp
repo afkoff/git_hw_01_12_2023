@@ -16,6 +16,6 @@ int main()
 			max = arr[i];
 		}
 	}
-	cout << max << endl;
+	cout << "Максимальное значение" << max << endl;
 	return 0;
 }
